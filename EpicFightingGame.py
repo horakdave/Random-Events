@@ -81,7 +81,7 @@ class Character:
             "used a mind-reading technique on": (10, 15),
             "activated a time distortion field around": (25, 30),
             "performed a whirlwind strike on": (20, 25),
-            "threw a chain lightning at": (30, 35),
+            "activated a chain lightning at": (30, 35),
             "summoned a spectral dragon to attack": (40, 50),
             "shot a celestial beam on": (35, 40),
             "used a reality-warping ability on": (25, 30),
