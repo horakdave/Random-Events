@@ -41,7 +41,7 @@ class Character:
             "hair pull": (1, 3),
             "ear slap": (3, 7),
             "nose strike": (4, 8),
-            "throat strike": (6, 10),
+            "throat striked": (6, 10),
             "farted on": (0, 3),
             "insulted": (0, 5),
             "tickled": (0, 2),
