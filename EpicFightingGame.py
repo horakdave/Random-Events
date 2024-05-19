@@ -93,23 +93,6 @@ class Character:
             "activated a supernova around": (50, 60),
             "threw a kitten at": (2, 5),
             "threw a pillow at": (2, 4),
-            "threw a rubber duck at": (4, 7),
-            "swinged a foam sword at": (3, 6),
-            "performed a balloon animal distraction on": (4, 8),
-            "threw a cupcake at": (3, 6),
-            "summoned a swarm of ladybugs to annoy": (2, 4),
-            "pillow fighted": (4, 7),
-            "used a bubble machine on": (6, 10),
-            "activated a party popper surprise around": (8, 12),
-            "performed a marshmallow launcher attack on": (5, 9),
-            "threw a rubber chicken at": (3, 6),
-            "summoned a rain of confetti on": (4, 8),
-            "used a glitter bomb on": (7, 12),
-            "activated a foam party around": (6, 10),
-            "performed a whoopee cushion shockwave on": (8, 12),
-            "used a party horn blast on": (7, 12),
-            "activated a disco ball distraction around": (6, 10),
-            "threw a cake at": (5, 9),
         }
         attack_type, damage_range = random.choice(list(attacks.items()))
         damage = random.randint(*damage_range)
