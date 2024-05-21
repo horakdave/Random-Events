@@ -10,6 +10,7 @@ class Character:
         self.name = name
         self.health = maximum
         self.agent = None
+        self.can_hire_agent = True
 
     def is_alive(self):
         return self.health > 0
@@ -169,13 +170,17 @@ class Character:
         other.display_health_bar()
 
     def hire_agent(self):
-        agent_name = f"{self.name}'s agent"
-        agent = Character(agent_name)
-        agent.health = 20
-        self.agent = agent
-        characters.append(agent)
-        print(f"{self.name} hired {agent_name}.")
-        self.heal_self()
+        if self.can_hire_agent:
+            agent_name = f"{self.name}'s agent"
+            agent = Character(agent_name)
+            agent.health = 20
+            self.agent = agent
+            characters.append(agent)
+            print(f"{self.name} hired {agent_name}.")
+            self.heal_self()
+            self.can_hire_agent = False
+        else:
+            print(f"{self.name} cannot hire more agents.")
 
     def win_with_agent(self):
         print(f"{self.name} and {self.agent.name} are the only ones left. {self.name} wins!")
