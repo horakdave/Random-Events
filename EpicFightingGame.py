@@ -2,8 +2,8 @@ import random
 import time
 
 maximum = 100
-heal_chance = 0.33 #33%
-agent_chance = 0.05 #50%
+heal_chance = 0.10 #10%
+agent_chance = 0.01 #1%
 
 class Character:
     def __init__(self, name):
